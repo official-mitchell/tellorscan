@@ -1,0 +1,17 @@
+@import "./streaming/ChallengeTable";
+@import "./apiInQ/APIinQ";
+
+.activity-container {
+  background: transparent !important;
+
+  .activity-box {
+
+  }
+
+  .activity-header {
+    min-height: 50px;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 1px 10px rgba(171,171,171,.25);
+  }
+}

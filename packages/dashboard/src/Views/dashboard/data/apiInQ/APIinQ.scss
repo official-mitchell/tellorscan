@@ -1,0 +1,14 @@
+.request-container {
+  box-shadow: 0px 1px 10px rgba(171,171,171,.25);
+  border: 1px solid rgba(100,100,100,.3);
+  border-radius: 0px 0px 5px 5px;
+  font-size: 14px;
+}
+
+.api-table-box {
+  min-height: 550px !important;
+  .item-row {
+ 	min-height:75px !important;
+  }
+}
+

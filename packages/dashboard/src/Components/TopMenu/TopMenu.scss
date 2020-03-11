@@ -1,11 +1,66 @@
 @import "./LogoBlock";
 
 .top-nav {
-  min-height: 148px;
-  background: theme-color("nav-bg");
-  color: theme-color("nav-item-text");
+  // min-height: 148px;
+  background: $dark-gray;
+  // color: theme-color("nav-item-text");
 
-  .login {
+  // background-color: $gray-dark;
+  // color: $gray-light;
+}
 
+.list-style-none {
+  list-style: none;
+}
+
+.dropdown-menu {
+  background: $dark-gray;
+  border: 0.25px solid $gray;
+  border-radius: 0px;
+  position: absolute;
+  z-index: 100;
+  @include md() {
+    min-width: 250px;
   }
+}
+
+.dropdown-toggle {
+  color: $light-gray;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.drop-item {
+  background-color: transparent !important;
+  color: $light-gray;
+  border-color: none !important;
+  transition: all 0.3s ease-in-out;
+  @include md() {
+    min-height: 2rem;
+    max-height: 2rem;
+  }
+  &:hover {
+    color: $white;
+    background-color: transparent !important;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.nav-item {
+  background-color: none !important;
+  color: $light-gray;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: none !important;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.drop-divider {
+  border-top: 1px solid $gray;
 }

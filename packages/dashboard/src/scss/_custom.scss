@@ -1,12 +1,26 @@
-@import '~react-redux-toastr/src/styles/index';
+@import "~react-redux-toastr/src/styles/index";
 @import "variables";
 @import "../Components/Components";
 @import "../Views/Views";
 
+.text-green {
+  color: $tellor-main;
+}
 
+.text-green-dark {
+  color: $tellor-dark;
+}
 
-.text-tellor-green {
-  color: theme-color("tellor-green");
+.text-red {
+  color: $red;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-white {
+  color: $white;
 }
 
 .bg-tellor-green {
@@ -50,7 +64,7 @@
 }
 
 .text-sz-xsm {
-  font-size: .6em;
+  font-size: 0.6em;
 }
 
 .text-sz-hero {
@@ -170,20 +184,47 @@
 }
 
 .circle-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /*color: theme-color("tellor-text-dark") !important;*/
-    border: 1px solid theme-color("dark-border");
-    border-radius: 50%;
-    background: theme-color("tellor-bg-light");
-    height: 20px;
-    width: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*color: theme-color("tellor-text-dark") !important;*/
+  border: 1px solid theme-color("dark-border");
+  border-radius: 50%;
+  background: theme-color("tellor-bg-light");
+  height: 20px;
+  width: 20px;
 
-    &:hover {
-      cursor: pointer;
-      color: white !important;
-      background: theme-color("bg-purple-hover");
-    }
+  &:hover {
+    cursor: pointer;
+    color: white !important;
+    background: theme-color("bg-purple-hover");
+  }
+}
+
+/* #################################################### */
+/* Modifies side scrollbar */
+
+// /**** TAKING OUT FOR NOW. It makes things push left at odd times
+body::-webkit-scrollbar {
+  @include sm() {
+    width: 0.9rem;
+  }
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(30, 33, 43, 0.763);
+  background: $gray;
+}
+
+body::-webkit-scrollbar-thumb {
+  // background-image: linear-gradient(to bottom, $color1, $color2);
+  background: #767676;
+  // outline: 1px solid slategrey;
+}
+
+@media screen and (max-width: 576px) {
+  body::-webkit-scrollbar {
+    display: none !important;
+  }
 }

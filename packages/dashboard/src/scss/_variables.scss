@@ -1,20 +1,90 @@
 // Override Boostrap variables
 @import "node_modules/bootstrap/scss/bootstrap";
 
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$darkest-gray: #252525;
+$dark-gray: #333333;
+$gray: #5c5c5c;
+$light-gray: #d1d1d1;
+
+$blue: #d1d1d1;
+$red: #ff0031;
+
+$tellor-main: #03fd90;
+$tellor-dark: #00b164;
+
+/* SCREEN SIZES */
+
+// Smart phones (portrait view)
+$screen-xs-min: 0px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops (includes Macbooks)
+$screen-lg-min: 992px;
+// Large tablets and desktops (bigger displays)
+$screen-xl-min: 1300px;
+
+// Xtrasmall devices
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Xtralarge devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
 
 $theme-colors: (
-  "tellor-green": #06D87C,
+  "tellor-green": #06d87c,
   "tellor-logo-text-highlight": $success,
   "tellor-logo-text-normal": $secondary,
   "bg-tellor-charcoal": #414141,
-  "bg-tellor-green": #06D87C,
-  "bg-tellor-muted": rgba(100,100,100,.1),
-  "bg-tellor-subtle": rgba(200,200,200,.2),
+  "bg-tellor-green": #06d87c,
+  "bg-tellor-muted": rgba(100, 100, 100, 0.1),
+  "bg-tellor-subtle": rgba(200, 200, 200, 0.2),
   "nav-bg": rgba(255, 255, 255, 1),
-  "main-bg": #F2F2F2,
-  "nav-item-text": rgba(255,255,255,.8),
+  "main-bg": #f2f2f2,
+  "nav-item-text": rgba(255, 255, 255, 0.8),
   "highlight-button-bg": $warning,
-  "input-placeholder": rgba(180, 180, 180, .8),
+  "input-placeholder": rgba(180, 180, 180, 0.8),
   "highlight-gradient-start": #58c366,
   "highlight-gradient-end": $success,
   "tellor-text-dark": black,
@@ -22,4 +92,4 @@ $theme-colors: (
   "clickable-icon-hover-text": black,
   "clickable-icon-hover-bg": $warning,
   "bg-purple-hover": #8b8cd6
-)
+);

@@ -4,7 +4,8 @@
 @import "./modals/Modals.scss";
 
 .dashboard-container {
-  background: theme-color("main-bg");
+  // background: theme-color("main-bg");
+  background: $darkest-gray;
 
   .request-button-wrapper {
     background: transparent;
@@ -14,7 +15,7 @@
       color: white;
       font-weight: bold;
       border-radius: 20px;
-      border: 1px solid #BDBDBD;
+      border: 1px solid #bdbdbd;
       &:hover {
         background: theme-color("bg-purple-hover");
       }
@@ -23,6 +24,6 @@
 
   .activity-container {
     background: theme-color("tellor-bg-light");
+    // background: $dark-gray;
   }
-
 }
