@@ -42,7 +42,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "chai": "^3.5.0",
     "eslint": "^5.1.0",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
